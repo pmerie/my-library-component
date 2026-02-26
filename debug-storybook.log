@@ -1,18 +1,18 @@
-[21:03:58.569] [INFO] storybook v10.2.12
-[21:03:58.676] [DEBUG] Getting package.json info for /Users/princessmeriesantiago/Documents/santiago_princessmerie_ui_garden/package.json...
-[21:03:59.004] [DEBUG] Serving static files from [36mpublic[39m at [36m/[39m
-[21:03:59.005] [INFO] Starting...
-[21:03:59.016] [WARN] No story files found for the specified pattern: [34msrc/**/*.mdx[39m
-[21:03:59.072] [DEBUG] Starting preview..
-[21:03:59.079] [INFO] Loading Webpack configuration from `node_modules/react-scripts`
-[21:03:59.080] [INFO] Removing existing JavaScript and TypeScript rules.
-[21:03:59.513] [INFO] Modifying Create React App rules.
-[21:03:59.517] [INFO] Addon-docs: using MDX3
-[21:03:59.537] [INFO] Using default Webpack5 setup
-[21:03:59.962] [DEBUG] Using tsconfig paths for react-docgen
-[21:04:01.371] [ERROR] Failed to build the preview
-[21:04:01.375] [WARN] Force closed preview build
-[21:04:01.375] [ERROR] [38;2;241;97;97mSB_BUILDER-WEBPACK5_0003 (WebpackCompilationError): There were problems when compiling your code with Webpack.
+[11:45:38.702] [INFO] storybook v10.2.12
+[11:45:38.808] [DEBUG] Getting package.json info for /Users/princessmeriesantiago/Documents/my-library-component/package.json...
+[11:45:39.062] [DEBUG] Serving static files from [36mpublic[39m at [36m/[39m
+[11:45:39.062] [INFO] Starting...
+[11:45:39.077] [WARN] No story files found for the specified pattern: [34msrc/**/*.mdx[39m
+[11:45:39.143] [DEBUG] Starting preview..
+[11:45:39.147] [INFO] Loading Webpack configuration from `node_modules/react-scripts`
+[11:45:39.147] [INFO] Removing existing JavaScript and TypeScript rules.
+[11:45:39.489] [INFO] Modifying Create React App rules.
+[11:45:39.493] [INFO] Addon-docs: using MDX3
+[11:45:39.510] [INFO] Using default Webpack5 setup
+[11:45:39.806] [DEBUG] Using tsconfig paths for react-docgen
+[11:45:41.034] [ERROR] Failed to build the preview
+[11:45:41.036] [WARN] Force closed preview build
+[11:45:41.037] [ERROR] [38;2;241;97;97mSB_BUILDER-WEBPACK5_0003 (WebpackCompilationError): There were problems when compiling your code with Webpack.
 Run Storybook with --debug-webpack for more information.[39m
     at starter (file://./node_modules/@storybook/builder-webpack5/dist/index.js:799:11)
     at starter.next (<anonymous>)
@@ -24,5 +24,5 @@ Run Storybook with --debug-webpack for more information.[39m
     at async withTelemetry (file://./node_modules/storybook/dist/_node-chunks/chunk-6JM2KRWM.js:218:12)
     at async dev (file://./node_modules/storybook/dist/bin/core.js:2734:3)
     at async _Command.<anonymous> (file://./node_modules/storybook/dist/bin/core.js:2803:92)
-[21:04:01.376] [WARN] Broken build, fix the error above.
+[11:45:41.038] [WARN] Broken build, fix the error above.
 You may need to refresh the browser.
