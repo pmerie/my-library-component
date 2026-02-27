@@ -1,46 +1,97 @@
-# Getting Started with Create React App
+# Assignment 12 - Web Component Library
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Using React App, Typescript, Styled-Components and Storybook, the assignment involves buidling a React component library containing the necessary components for the application, including Button, Label, Text, Table, Dropdown, Radio Button, Img, Hero Image and Card. Additionally, default and disable states are supported.
 
-## Available Scripts
+# Creating a React APP with Typescript
+Use Create React App with Typescript to create a foundation application.
 
-In the project directory, you can run:
+Command:
 
-### `npm start`
+npx create-react-app my-component-library --template typescript
+cd my-component-library
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+I began npm start after making my project template to make sure everything was operating properly.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Install Storybook
+Install the storybook
 
-### `npm test`
+npx storybook@latest init
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This indicates to me that it will get the storybook ready to develop and demonstrate the components in order to ensure that it is functioning. By altering props like text, color and disabled state, it allows to test interface elements and interaction.
 
-### `npm run build`
+# Install Required Libraries
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm install styled-components
+npm install --save-dev @types/styled-components
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm install --save-dev @testing-library/react
+npm install --save-dev @testing-library/jest-dom
+npm install --save-dev jest-styled-components
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+After running the storybook, I added all the libraries needed for the task. Upon finishing the installation.
 
-### `npm run eject`
+Prop based styling is made possible by the styled-components.
+jest-dom offers a testing matcher enhancement
+Testing CSS, such as turning off background colors is feasibble via jest-styled-components
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Project Structure
+I use this following files and arrange each component in its own folder;
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Component_name.tsx
+Component_name.stories.tsx 
+Component_name.types.tsx 
+Component_name.tests.tsx 
+Index.ts 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+This applicable to all necessary elements
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Implement all required components
+Using the same format as the assignment, I put all of the following elements into practice
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Button
+Label
+Text
+Table 
+Table header
+Table row
+Table cell
+Table footer
+Dropdown
+Radio button
+Img
+Hero Image
+Card 
+
+Two tests and a storybook are included in every component
+
+
+# Testing phase
+I executed this command after completing each component
+
+npm test
+
+It provides visibility and disabled state tests for every component. The unit test verifies the elements are accurate and truthful
+
+
+# Production Build
+I ran the production build using:
+
+npm run build
+
+This makes my Docker container's /build directory. It optimizes my combined data into smaller files and speeds up browser loading
+
+
+# Docker Deployment
+I made a Dockerfile that creates the production version of React and displays it on port 8083
+
+I use the following command to create an image after constructing my dockerfile:
+
+docker build -t santiago_princessmerie_coding_assignment12 .
+
+Run command:
+
+docker run -p 8083:8083 santiago_princessmerie_coding_assignment12
+
+

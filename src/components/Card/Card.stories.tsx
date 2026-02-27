@@ -21,7 +21,7 @@ export const Default: Story = {
     title: 'Card Title',
     content: 'This is a card component.',
     disabled: false,
-    backgroundColor: "Light blue"
+    backgroundColor: "#C8D9F0"
   },
 };
 
