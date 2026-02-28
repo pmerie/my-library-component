@@ -92,6 +92,6 @@ docker build -t santiago_princessmerie_coding_assignment12 .
 
 Run command:
 
-docker run -p 8083:8083 santiago_princessmerie_coding_assignment12
+docker run -p 8083:8083 --name santiago_princessmerie_coding_assignment12 santiago_princessmerie_coding_assignment12
 
 
